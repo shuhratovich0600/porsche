@@ -21,7 +21,7 @@ body::before{
     content: "";
     position: fixed;
     inset: 0;
-    background-image: url("./img/download.jfif");
+    background-image: url("download.jfif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
