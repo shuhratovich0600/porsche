@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Porsche Mini Sayt</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <span class="brandName">Porsche</span
+        ><span class="miniWebsite">mini sayt</span>
+      </h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Bosh sahifa</a></li>
+          <li><a href="about.html">Biz haqimizda</a></li>
+          <li><a href="contact.html">Aloqa</a></li>
+        </ul>
+      </nav>
+
+      <search>
+        <input type="text" placeholder="Qidirish" />
+      </search>
+    </header>
+
+    <div class="best" id="bestSection">
+      <div class="bestContent">
+        <span class="bestEyebrow">Afsonaviy Tezlik</span>
+        <h2>Eng Yaxshi Porsche</h2>
+        <p class="bestText">
+          Aniqlik, tezlik va vaqt sinovidan o‘tgan dizayn bitta premium
+          tajribada jamlangan.
+        </p>
+        <div class="bestActions">
+          <a class="primaryButton" href="#specsSection">Texnikalarni Ko‘rish</a>
+          <a class="secondaryButton" href="#mainContent">Galereyani Ko‘rish</a>
+        </div>
+      </div>
+    </div>
+
+    <main id="mainContent">
+      <section class="cards">
+        <div class="cardsLogo">
+          <span class="cardsLogoMark">Eng Kuchlilari</span>
+        </div>
+
+        <div class="card">
+          <a class="cardLink" href="https://newsroom.porsche.com/en_US/model-range/911/911-turbo-s.html" target="_blank" rel="noopener noreferrer">
+            <img src="./img/911.png" alt="Porsche 911 Turbo S" />
+            <h3>911 Turbo S</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a class="cardLink" href="https://www.porsche.com/usa/models/taycan/taycan-models/taycan-turbo-gt/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/taycan.png" alt="Porsche Taycan Turbo GT" />
+            <h3>Taycan Turbo GT</h3>
+          </a>
+        </div>
+        
+        <div class="card">
+          <a class="cardLink" href="https://newsroom.porsche.com/en_US/model-range/cayenne/cayenne-turbo-gt.html" target="_blank" rel="noopener noreferrer">
+            <img src="./img/cayenne.png" alt="Porsche Cayenne Turbo GT" />
+            <h3>Cayenne Turbo GT</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a class="cardLink" href="https://www.porsche.com/usa/models/panamera/panamera-models/panamera-turbo-s-e-hybrid/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/718.png" alt="Porsche Panamera Turbo S E-Hybrid" />
+            <h3>Panamera Turbo S E-Hybrid</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a class="cardLink" href="https://newsroom.porsche.com/en_US/model-range/718/718-cayman-gt4-rs.html" target="_blank" rel="noopener noreferrer">
+            <img src="./img/cayman.png" alt="Porsche 718 Cayman GT4 RS" />
+            <h3>718 Cayman GT4 RS</h3>
+          </a>
+        </div>
+
+        <div class="card">
+          <a class="cardLink" href="https://newsroom.porsche.com/en/press-kits/Porsche-Museum/Porsche-918-Spyder.html" target="_blank" rel="noopener noreferrer">
+            <img src="./img/spyder.png" alt="Porsche 918 Spyder" />
+            <h3>918 Spyder</h3>
+          </a>
+        </div>
+        
+      </section>
+
+      <section class="specs" id="specsSection">
+        <div class="sectionIntro">
+          <span class="sectionEyebrow">Porsche Raqamlari</span>
+          <h2>Har Bir Detalda Quvvat</h2>
+          <p>
+            Porsche muhandisligi faqat chiroyli dizayn emas, balki yuqori
+            quvvat, keskin tezlanish va ishonchli maksimal tezlikdir.
+          </p>
+        </div>
+
+        <div class="specsGrid">
+          <article class="specCard">
+            <span class="specValue">650 HP</span>
+            <h3>Maksimal Quvvat</h3>
+            <p>Har bir startda superkar hissini berish uchun yaratilgan.</p>
+          </article>
+
+          <article class="specCard">
+            <span class="specValue">2.7s</span>
+            <h3>0-100 km/h</h3>
+            <p>Bir lahzada adrenalin beradigan keskin tezlanish.</p>
+          </article>
+
+          <article class="specCard">
+            <span class="specValue">330 km/h</span>
+            <h3>Yuqori Tezlik</h3>
+            <p>Aniq nemis muhandisligi yaratgan barqaror tezlik tajribasi.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="siteFooter">
+      <div>
+        <h3>Porsche Mini Sayt</h3>
+        <p>Hashamatli quvvat, afsonaviy dizayn va zamonaviy tezlik bir joyda.</p>
+      </div>
+
+      <div class="footerLinks">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="#specsSection">Texnikalar</a>
+        <a href="contact.html">Aloqa</a>
+      </div>
+    </footer>
+
+    <script>
+      const bestSection = document.getElementById("bestSection");
+      const mainContent = document.getElementById("mainContent");
+      const pageHeader = document.querySelector("header");
+
+      window.addEventListener("scroll", function () {
+        if (window.scrollY > 80) {
+          bestSection.classList.add("bestHidden");
+          mainContent.classList.add("mainLifted");
+          pageHeader.classList.add("headerHidden");
+        } else {
+          bestSection.classList.remove("bestHidden");
+          mainContent.classList.remove("mainLifted");
+          pageHeader.classList.remove("headerHidden");
+        }
+      });
+    </script>
+  </body>
+</html>
